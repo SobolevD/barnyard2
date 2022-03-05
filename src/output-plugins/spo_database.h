@@ -357,7 +357,7 @@ typedef struct _dbReliabilityHandle
     /* Herited from shared data globals */
 
     unsigned long pThreadID; /* Used to store thread information and know if we "reconnected automaticaly" */
-    my_bool mysql_reconnect; /* We will handle it via the api. */
+    bool mysql_reconnect; /* We will handle it via the api. */
 #endif /* ENABLE_MYSQL */
 
 #ifdef ENABLE_POSTGRESQL
